@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="2个card"/>
+  <title>card</title>
+  <style>
+    .card { 
+      width: 280px;
+      margin: 40px auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    #pic1 img {
+      width: 100%;
+      height: 300px;
+    }
+    #pic1 div {
+      height: 65px;
+      padding-left: 20px;
+    }
+    #pic1 div p:first-child {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    } 
+    #pic1 div p:nth-child(2) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #pic2 img {
+      width: 100%;
+      height: 200px;
+    }
+    #pic2 p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div id="pic1" class="card">
+      <img src="https://ooo.0o0.ooo/2017/07/03/595a03b2c4db2.png" alt="小饥的头像">
+      <div>
+       <p>小饥</p>
+       <p>前端工程师一枚，爱生活，爱和平,爱世界</p>
+      </div>
+    </div>
+    <div id="pic2" class="card">
+      <img src="https://ooo.0o0.ooo/2017/07/03/595a03c62f65c.png">
+      <div>
+       <p>风景如画</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
