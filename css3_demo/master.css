@@ -1,0 +1,86 @@
+body{
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+} 
+.shape{
+  margin: 30px; 
+  width: 100px;
+  height: 100px;
+}
+.circle{
+  background-color: pink;
+  border-radius: 50%;
+}
+.semicircle{
+  height: 50px;
+  background-color: #31c27c;
+  border-radius: 50px 50px 0 0;
+}
+.sector{
+  background-color: #95cbe7;
+  border-radius: 100px 0 0 0;
+}
+.shadow{
+  border: 1px solid #bbb;
+  box-shadow: 5px 5px 4px 4px #bbb;
+}
+.transform1{
+			display: inline-block;
+			margin: 10px;
+}
+.scale1{
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			border: 1px solid red;
+			transition: all 0.3s;
+		}
+.scale1:hover{
+			transform: scale(1.5);
+		}
+.scale2{
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			border: 1px solid red;
+			transition: all 0.3s;
+		}
+.scale2:hover{
+			transform: scale(0.5);
+		}
+.translatex{
+width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			border: 1px solid red;
+			transition: all 0.3s;
+}
+.translatex:hover{
+  transform: translateX(20px);
+}
+.translatey{
+width: 100px;
+height: 100px;
+line-height: 100px;
+			text-align: center;
+			border: 1px solid red;
+			transition: all 0.5s;
+}
+.wrap .translatey:hover{
+  transform: translateY(20px);
+}
+.rotate{
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			border: 1px solid red;
+			transition: all 0.3s;
+}
+.rotate:hover{
+			transform: rotate(60deg);
+		}
