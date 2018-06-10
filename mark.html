@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>贴纸标签</title>
+  <script>
+    html{
+  box-sizing: border-box;
+  font: 18px PT Mono;
+  background: #fff;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.card{
+  //border: 1px solid #999;
+  min-width: 200px;
+  width: 20%;
+  margin: 30px auto;
+  padding: 16px 20px;
+  background: linear-gradient(to right, #abbd73  35%, #d6e2ad 100%);
+  border-radius: 5px;
+  box-shadow: 1px 2px 1px -1px #999;
+  text-align: right;
+  position: relative;
+}
+.shadow{
+  //position: relative;
+}
+.shadow:before{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  right: 5px;
+  width: 75%;
+  top: 0;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(5deg);
+  transition: all 150ms ease-in-out;//加速然后减速
+}
+.card:hover{
+  background: #abbd73;
+}
+.shadow:hover:before{
+  bottom: 20px;
+  transform: rotate(0deg);
+}
+.circle{
+  //border: 1px solid red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.5);//内阴影
+}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card shadow">
+	  <a href="#">HTML5</a>
+      <div class="circle"></div>
+    </div>
+    <div class="card shadow">
+	  <a href="#">CSS3</a>
+      <div class="circle"></div>
+    </div>
+    <div class="card shadow">
+	  <a href="#">JavaScript</a>
+      <div class="circle"></div>
+    </div>
+  </div>
+</body>
+</html>
